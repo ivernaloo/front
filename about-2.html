@@ -1,0 +1,141 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="众善，众筹，捐助，爱心，慈善，项目">
+    <title>众善众筹</title>
+    <link rel="stylesheet" type="text/css" href="http://www.allheart.cn/css/bootstrap3.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="topimg">
+    <div style="width:100%;min-width:1024px;">
+        <ul class="userinfo">
+            <li style="padding-right: 15px;"><a href="#" ></a></li>
+            <li id="logout" class="logout"><a href=http://www.allheart.cn/index.php/action/logout >退出</a></li>
+        </ul>
+    </div>
+</div>
+<div class="top">
+
+    <div class="topbar1">
+        <div class="logoimg"><span><img alt="众善LOGO" src="img/allheart/logo.png.jpg"></span></div>
+        <div class="logoinfo">
+            <ul style="font-size: 15px;padding-top: 15px;font-weight: bold;" class="nav nav-pills">
+                <li><a target="_self" href="http://www.allheart.cn/">首页</a></li>
+                <li><a href="#">我要捐助</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li style="padding-right:10px;float:right;"><input type="button" value="登录" onclick="javascrtpt:window.location.href='http://www.allheart.cn/index.php/welcome/login'" style="width: 100px;" class="btn btn-primary" id="goin">
+                </li>
+                <li style="padding-right:10px;float:right;"><input type="button" value="注册" onclick="javascrtpt:window.location.href='http://www.allheart.cn/index.php/welcome/register'" style="width: 100px;" class="btn btn-primary" id="goout">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="all">
+        <div class="main clearfix">
+            <div class="wrap">
+                <div class="about-content clearfix">
+                    <div class="menu-nav">
+                        <ul class="clearfix">
+                            <li class="select"><a href="/help-about" class="about icon-ast">关于众筹</a></li>
+                            <li><a href="/help-contact" class="contact icon-ast">联系我们</a></li>
+                            <li><a href="/help-center" class="help icon-ast">帮助中心</a></li>
+                            <li><a href="/help-team" class="intro icon-ast">团队介绍</a></li>
+                            <li><a href="/help-term" class="service icon-ast">服务协议</a></li>
+                            <li><a href="/help-specification" class="service icon-ast">项目发起规范</a></li>
+                            <li><a href="/help-announcement" class="service icon-ast">众筹公告</a></li>
+                        </ul>
+                    </div>
+                    <div class="maincontent">
+                        <div class="tit-wrap"><h3>联系我们</h3></div>
+                        <div class="content-box">
+                            <p>
+
+                            公益中国，有你有我
+                            </p>
+                            <p>
+                            梦想，
+                            </p>
+                            <p>
+                                曾经如此遥远。
+                            梦想，
+                            </p>
+                            <p>
+                            不曾如此靠近。
+                            </p>
+                            <p>
+                            给生活一个藉口，给人生一个理由。
+                            </p>
+                            <p>
+                            忙碌不是全部，无助不是孤独。
+                            </p>
+                            <p>
+                            有你，有我。
+                            </p>
+                            <p>
+                            一盏明灯，一个微笑。
+                            </p>
+                            <p>
+                            一支玫瑰，一份温情。
+                            </p>
+                            <p>
+                            善就在这里，
+                            </p>
+                            <p>
+                            不曾离去。
+                            </p>
+                            <p>
+                            人间没有冷漠，冬天也有花朵。
+                            </p>
+                            <p>
+                            给生活一个藉口，
+                            </p>
+                            <p>
+                            给爱心一个理由。
+                            </p>
+                            <p>
+                            给人生一个藉口，
+                            </p>
+                            <p>
+                            给初心一个理由。
+                            </p>
+                            <p>
+                            公益中国，有你有我。
+                            </p>
+                            <p>
+                            众善众筹。
+                            </p>
+
+
+                            加入我们，给自己一个理由！
+                            zhongshanjr@163.com（来信请附完整中文简历）
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<input type="hidden" name="login_status" id="login_status" value=>
+</body>
+</html>
+<script type="text/javascript">
+    var a = document.getElementById('login_status').value;
+    if(a == ''){
+        document.getElementById('logout').style.display = "none";
+        document.getElementById('goin').type = "button";
+        document.getElementById('goout').type = "button";
+    }
+    else {
+        document.getElementById('logout').style.display = "block";
+        document.getElementById('goin').type = "hidden";
+        document.getElementById('goout').type = "hidden";
+    }
+</script>

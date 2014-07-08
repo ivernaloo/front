@@ -1,0 +1,97 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="众善，众筹，捐助，爱心，慈善，项目">
+    <title>众善众筹</title>
+    <link rel="stylesheet" type="text/css" href="http://www.allheart.cn/css/bootstrap3.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="topimg">
+    <div style="width:100%;min-width:1024px;">
+        <ul class="userinfo">
+            <li style="padding-right: 15px;"><a href="#" ></a></li>
+            <li id="logout" class="logout"><a href=http://www.allheart.cn/index.php/action/logout >退出</a></li>
+        </ul>
+    </div>
+</div>
+<div class="top">
+
+    <div class="topbar1">
+        <div class="logoimg"><span><img alt="众善LOGO" src="img/allheart/logo.png.jpg"></span></div>
+        <div class="logoinfo">
+            <ul style="font-size: 15px;padding-top: 15px;font-weight: bold;" class="nav nav-pills">
+                <li><a target="_self" href="http://www.allheart.cn/">首页</a></li>
+                <li><a href="#">我要捐助</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li style="padding-right:10px;float:right;"><input type="button" value="登录" onclick="javascrtpt:window.location.href='http://www.allheart.cn/index.php/welcome/login'" style="width: 100px;" class="btn btn-primary" id="goin">
+                </li>
+                <li style="padding-right:10px;float:right;"><input type="button" value="注册" onclick="javascrtpt:window.location.href='http://www.allheart.cn/index.php/welcome/register'" style="width: 100px;" class="btn btn-primary" id="goout">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="all">
+        <div class="main clearfix">
+            <div class="wrap">
+                <div class="about-content clearfix">
+                    <div class="menu-nav">
+                        <ul class="clearfix">
+                            <li class="select"><a href="/help-about" class="about icon-ast">关于众筹</a></li>
+                            <li><a href="/help-contact" class="contact icon-ast">联系我们</a></li>
+                            <li><a href="/help-center" class="help icon-ast">帮助中心</a></li>
+                            <li><a href="/help-team" class="intro icon-ast">团队介绍</a></li>
+                            <li><a href="/help-term" class="service icon-ast">服务协议</a></li>
+                            <li><a href="/help-specification" class="service icon-ast">项目发起规范</a></li>
+                            <li><a href="/help-announcement" class="service icon-ast">众筹公告</a></li>
+                        </ul>
+                    </div>
+                    <div class="maincontent">
+                        <div class="tit-wrap"><h3>关于我们</h3></div>
+                        <div class="content-box">
+                            <p>
+                            众善众筹（All heart）是全国首家公益类众筹网站。
+                            </p>
+                            <p>
+                            众者，人也，三人成众也；善者，从言从羊，本义吉祥。依靠众人的力量，促进社会的进步，是众善众筹的宗旨。
+                            </p>
+                            <p>
+                            众善开始于一群热爱公益的年轻人。2013年，大家组建了一家名叫众善公益的小型基金会。然而，经过近一年的发展，我们发现，在经济高速发展的大环境下，社会整体对公益的需求非常巨大，仅仅依靠有限的公益组织和慈善机构，远不能满足普通人做公益的需求。因此，我们决定跳出来，从直接从事公益事业，到为有公益需求、有公益梦想的人服务。搭建平台，改变现状，为中国公益行业尽一份力。
+                            </p>
+                            <p>
+                            2014年2月，众善科技有限公司正式成立。在互联网技术席卷世界的今天，搭上众筹的快车，用科技的力量，吸引更多的人参与进来，参与到公益事业中来，是我们努力的初衷。我们将为社会团体和普通大众提供众筹服务，壮大公益的力量；同时，我们也将与公益组织和慈善机构合作，为其提供全新的筹款渠道，扩大公益活动的影响力。此外，我们希望建立良好的信息披露机制，通过网络平台以及手机APP服务，增加公益行动的透明度，提高公益行业的信誉度。同时希望改变公益捐赠的规则，实行有条件退款制度（不满意就退款的“三包“制度）。真正使捐赠人的每一分钱都能够产生效益，为捐赠人负责。
+                            </p>
+                            <p>
+                            相信我们，也相信自己。涓涓细流可以汇成大海，每一个人的付出，都能够成就无数个梦想。送人玫瑰，手留余香；玫瑰留香，温情有你。
+                            </p>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<input type="hidden" name="login_status" id="login_status" value=>
+</body>
+</html>
+<script type="text/javascript">
+    var a = document.getElementById('login_status').value;
+    if(a == ''){
+        document.getElementById('logout').style.display = "none";
+        document.getElementById('goin').type = "button";
+        document.getElementById('goout').type = "button";
+    }
+    else {
+        document.getElementById('logout').style.display = "block";
+        document.getElementById('goin').type = "hidden";
+        document.getElementById('goout').type = "hidden";
+    }
+</script>

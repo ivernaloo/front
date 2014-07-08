@@ -1,0 +1,127 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>众善众筹</title>
+    <link rel="stylesheet" type="text/css" href="http://www.allheart.cn/css/bootstrap3.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="topimg">
+    <div style="width:100%;min-width:1024px;">
+        <ul class="userinfo">
+            <li style="padding-right: 15px;"><a href="#" ></a></li>
+            <li id="logout" class="logout"><a href=http://www.allheart.cn/index.php/action/logout >退出</a></li>
+        </ul>
+    </div>
+</div>
+<div class="top">
+
+    <div class=topbar>
+        <div class=logoimg><span><img src="img/allheart/logo.png.jpg" alt="众善LOGO" /></span></div>
+        <div class=logoinfo>
+            <ul class="nav nav-pills" style="font-size: 15px;padding-top: 15px;font-weight: bold;">
+                <li><a href="http://www.allheart.cn/">首页</a></li>
+                <li><a href="#">我要捐助</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li style="padding-right:10px;float:right;"><input id="goin" type="button" class="btn btn-primary" style="width: 100px;" onclick="javascrtpt:window.location.href='http://www.allheart.cn/index.php/welcome/login'" value="登录" />
+                </li>
+                <li style="padding-right:10px;float:right;"><input id="goout"type="button" class="btn btn-primary" style="width: 100px;"onclick="javascrtpt:window.location.href='http://www.allheart.cn/index.php/welcome/register'" value="注册" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="b-detail-con">
+    <div class="item_content clearfix">
+        <div class="item_content_top">
+            <div class="item_content_left">
+                <h4 class="e-focus-title">NO.0001 贵州山区义务支教活动-1个月磨练个人意志的农户管卡韩国牛卡号你哦你回话哪款了呢你好你偶就</h4>
+                <ul class="e-focus-img">
+                    <li class="on"><img src="img/news/top-1.png" style=""></li>
+                    <li><img src="img/news/top-1.png" style=""></li>
+                    <li><img src="img/news/top-1.png" style=""></li>
+                </ul>
+                <ul class="e-focus-list">
+                    <li class="on"><img src="img/news/top-1.png" style=""></li>
+                    <li><img src="img/news/top-1.png" style=""></li>
+                    <li><img src="img/news/top-1.png" style=""></li>
+                </ul>
+            </div>
+            <div class="item_content_right">
+                <div class="b-count-panel">
+                    <div class="b-count-row">
+                        <span class="e-detail-title">拟筹资总额：</span>
+                        <spann class="e-detail-count-ready">￥10,000.00</spann>
+                    </div>
+                    <div class="b-count-row">
+                        <span class="e-detail-title">剩余可捐金额：</span>
+                        <span class="e-detail-count-gap">￥128,098.00</span>
+                    </div>
+                    <div class="b-count-row">
+                        <span class="e-detail-title">捐助金额：</span>
+                        ￥<input type="text" class="form-control" name="donation" id="donation" placeholder="" value="10.00元起">
+                    </div>
+                    <div><input type="button" class="btn btn-primary e-donate-btn" style="display: block;font-size: 16px;font-family: 微软雅黑;" value="立即捐助" /></div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                            <span class="e-percent">40%</span>
+                        </div>
+                    </div>
+                    <div class="e-tip-progress">
+                        <img src="img/icon/icon_progress.png" alt=""/>
+                    </div>
+                    <div class="e-count-status"><span>16 人已完成  | 累计2,000.00元 </span></div>
+
+                </div>
+
+
+                <div class="e-count-bar">倒计时：<span class="blue">1</span>天 <span class="blue">23</span>小时<span class="blue">12</span>分后结束</div>
+            </div>
+        </div>
+        <div class="item_content_bottom">
+            <div class="item_detail">
+                <div class="item_detail_content on" onclick="item_introduce();">
+                    项目介绍
+                </div>
+                <div class="item_detail_content" onclick="team();">
+                    执行团队
+                </div>
+                <div class="item_detail_content" onclick="item_show();">
+                    信息披露
+                </div>
+                <div class="item_detail_content" onclick="donation_detail();">
+                    捐助记录
+                </div>
+
+            </div>
+            <div class="item_detail_panel">
+                d
+                d
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<input type="hidden" name="login_status" id="login_status" value=>
+
+</body>
+</html>
+<script type="text/javascript">
+    var a = document.getElementById('login_status').value;
+    if(a == ''){
+        document.getElementById('logout').style.display = "none";
+        document.getElementById('goin').type = "button";
+        document.getElementById('goout').type = "button";
+    }
+    else {
+        document.getElementById('logout').style.display = "block";
+        document.getElementById('goin').type = "hidden";
+        document.getElementById('goout').type = "hidden";
+    }
+</script>
