@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="众善，众筹，捐助，爱心，慈善，项目">
     <title>众善众筹</title>
-    <link rel="stylesheet" type="text/css" href="http://www.allheart.cn/css/bootstrap3.css" />
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
@@ -41,7 +41,28 @@
     </div>
 </div>
 <div class="top-carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item">
+                <img src="img/news/focus/1.jpg" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="img/news/focus/2.jpg" alt="Second slide">
+            </div>
+            <div class="item active">
+                <img src="img/news/focus/3.jpg" alt="Third slide">
 
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
 </div>
 <div class="all">
     <div class="pronum22" id="proname" name="proname"><span class="item-title">最新推荐</span><a style="float:right;" href="#">>>更多</a></div>
@@ -190,8 +211,11 @@
         </div>
         <div class="b-wx">
             <img src="img/allheart/icon-wx.jpg" class="e-wx" alt=""/>
-            微信公众号:<br/>
-            allhearter
+            <div class="e-wx">
+                微信公众号:<br/>
+                allhearter
+            </div>
+
         </div>
     </div>
 </div>
