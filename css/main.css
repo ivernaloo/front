@@ -108,11 +108,19 @@ body {
   min-width: 1024px;
 }
 .topimg {
-  display: inline-block;
+  zoom: 1;
   width: 100%;
   height: 20px;
   background-color: #5e5858;
   min-width: 1024px;
+}
+.topimg:before,
+.topimg:after {
+  content: "";
+  display: table;
+}
+.topimg:after {
+  clear: both;
 }
 .topimg .topimgbar {
   width: 997px;
@@ -922,11 +930,17 @@ body {
   line-height: 0;
   height: 0;
 }
+/* Micro ClearFix Mixin */
 .clearfix {
-  display: inline-block;
+  zoom: 1;
 }
-html[xmlns] .clearfix {
-  display: block;
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
 }
 .space {
   display: block;
@@ -945,10 +959,18 @@ html[xmlns] .clearfix {
   margin: 0 auto;
 }
 .b-detail-con .item_content .item_content_top {
-  display: inline-block;
+  zoom: 1;
   background: #fff;
   margin-top: 25px;
   width: 100%;
+}
+.b-detail-con .item_content .item_content_top:before,
+.b-detail-con .item_content .item_content_top:after {
+  content: "";
+  display: table;
+}
+.b-detail-con .item_content .item_content_top:after {
+  clear: both;
 }
 .blue {
   color: #428bca;
