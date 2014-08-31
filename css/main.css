@@ -975,3 +975,70 @@ body {
 .blue {
   color: #428bca;
 }
+.item-introduce {
+  padding: 10px;
+}
+.item_record_con .item_record_title {
+  background-color: #E1FAFE;
+  border: 1px solid #B3F2FB;
+  width: 680px;
+  height: 60px;
+  margin: 20px auto;
+  font-size: 20px;
+  line-height: 60px;
+  text-indent: 2em;
+}
+.item_detail_con {
+  padding: 10px;
+}
+.item_detail_con .item_table,
+.item_detail_con tbody {
+  display: block;
+}
+.item_detail_con .item_table tr,
+.item_detail_con tbody tr {
+  display: block;
+  line-height: 300%;
+  font-size: 14px;
+}
+.item_detail_con .item_table .item-title,
+.item_detail_con tbody .item-title {
+  width: 150px;
+  text-align: right;
+  vertical-align: top;
+}
+.item_detail_con th {
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+.item_detail_con tr:nth-child(even) {
+  background-color: #F3F3F3;
+}
+.color-orange {
+  color: #E43810;
+}
+.item_record_con table,
+.item_record_con tbody,
+.item_record_con tr,
+.item_record_con th {
+  display: block;
+}
+.item_record_con .pagination {
+  margin-left: 350px;
+}
+.item_table_record {
+  display: block;
+  line-height: 250%;
+  font-size: 16px;
+  text-align: center;
+}
+.item_table_record tr {
+  border-bottom: 1px solid #ddd;
+}
+.item_table_record tr:first-child {
+  background-color: #E7F2F4;
+}
+.item_table_record tr td {
+  width: 230px;
+}
